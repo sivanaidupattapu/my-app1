@@ -12,12 +12,15 @@ function Country() {
         })
     }, [])
     return <div className='border border-2 border-info p-2 d-flex flex-wrap'>
-        <h2 className='text-danger-emphasis w-100'>Countrys</h2>
-        <div className="w-25">
+        <h2 className='text-danger-emphasis w-100 text-center'>Countrys</h2>
+        <div className="w-50 border border-2 border-warning p-2 ">
             {
                 country?.map((c, i) => {
-                    return <li key={i}>
-                        <Link to={`countrydetails/${c.name.common}`}>{c.name.common}</Link></li>
+                    return <li key={i} className="list-unstyled p-2">
+                        <div>
+                        <Link to={`countrydetails/${c.name.common}`}>{c.name.common}</Link>
+                        </div>
+                        </li>
                 })
             }
         </div>

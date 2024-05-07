@@ -13,10 +13,10 @@ function CountryDetails() {
                 })
             })
     },[cname])
-    return <div className="border border-2 border-success p-3" style={{height:'300px'}}>
-        <h6 className="text-danger">Country Details</h6>
+    return <div className="border border-2 border-success p-3 w-50" style={{height:'300px'}}>
+        <h5 className="text-danger text-center">Country Details</h5>
         <div>
-        <img src={(cdetail)?.flags[0]} alt="" width='100px' />
+        <img src={(cdetail)?.flags[0]} alt="" width='100px' className="text-center"  />
           <h4>Name : {(cdetail)?.name?.common}</h4>
           <h4>Capital : {(cdetail)?.capital}</h4>
           <h4>Continent : {(cdetail)?.continents}</h4>
