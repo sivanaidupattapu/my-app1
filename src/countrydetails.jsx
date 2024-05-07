@@ -13,7 +13,7 @@ function CountryDetails() {
                 })
             })
     },[cname])
-    return <div className="border border-2 border-success p-3">
+    return <div className="border border-2 border-success p-3" style={{height:'300px'}}>
         <h6 className="text-danger">Country Details</h6>
         <div>
         <img src={(cdetail)?.flags[0]} alt="" width='100px' />
