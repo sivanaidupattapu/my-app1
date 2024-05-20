@@ -31,7 +31,6 @@ function Employee(){
 
             {/* We can write forms using input fields and field components-> shown below */}
 
-
         <Form>
             <label>Fullname :</label>
             <Field name='fullname' type='text'></Field>
