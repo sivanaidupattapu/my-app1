@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
-    todos: ['Siva', 'Ravi', 'Sai', 'Raju', 'Madan', 'Teja']
+    todos: ['Siva', 'Ravi', 'Teja']
 }
 export const todolistSlice = createSlice({
     name: 'todolist',
@@ -8,8 +8,11 @@ export const todolistSlice = createSlice({
     reducers: {
         addTodo:(state,action)=>{
             state.todos.push(action.payload)
+        },
+        delTodo:(state,action)=>{
+            state.todos.splice(action.payload,1)
         }
     }
 })
-export const {addTodo} =todolistSlice.actions;
+export const {addTodo,delTodo} =todolistSlice.actions;
 export default todolistSlice.reducer

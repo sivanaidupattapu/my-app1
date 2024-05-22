@@ -4,7 +4,7 @@ import { inc, dec, reset } from "./counterslice";
 function Counter() {
     var { count } = useSelector(state => state.counterReducer)
     var dispatch = useDispatch();
-    console.log({ count })
+    console.log('count :',{ count })
     return <div className="text-center border border-2 border-warning p-2 m-1">
         <h1 className="text-danger" >Counter Component</h1>
         <h2 className="text-dark">Counter : {count}</h2>
